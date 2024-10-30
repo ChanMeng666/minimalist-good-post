@@ -1,23 +1,117 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+.main {
+  background-color: var(--ifm-background-color);
+  min-height: 100vh;
+}
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.hero {
   position: relative;
-  overflow: hidden;
+  padding: 8rem 2rem 6rem;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContent {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.buttons {
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 42rem;
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.heroButton:hover {
+  border-color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-900);
+  text-decoration: none;
+}
+
+.posts {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.postCard {
+  display: block;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  transition: background-color 0.2s;
+}
+
+.postCard:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
+.postContent {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.postExcerpt {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.readMore {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+}
+
+.breakLine {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 10rem 2rem 8rem;
+  }
+
+  .heroTitle {
+    font-size: 4rem;
+  }
+
+  .breakLine {
+    display: inline;
+  }
+
+  .postContent {
+    padding: 4rem 3rem;
+  }
 }
