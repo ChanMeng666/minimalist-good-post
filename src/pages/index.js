@@ -50,7 +50,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import { ChevronRight } from 'lucide-react';
-import MinimalistCube from './MinimalistCube';
+import GhostModel from './GhostModel';  // 替换原来的 MinimalistCube
 import styles from './index.module.css';  // 导入CSS Module
 
 const FeaturedPost = ({ title, excerpt, link }) => (
@@ -81,7 +81,7 @@ const MinimalistHeader = () => (
                 <ChevronRight />
             </Link>
         </div>
-        <MinimalistCube />
+        <GhostModel />
     </div>
 );
 
