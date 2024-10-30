@@ -150,14 +150,131 @@
 
 
 
+// // docusaurus.config.js
+// // @ts-check
+// import {themes as prismThemes} from 'prism-react-renderer';
+//
+// /** @type {import('@docusaurus/types').Config} */
+// const config = {
+//   title: '极简生活',
+//   tagline: '分享简单而美好的生活方式',
+//   favicon: 'img/favicon.ico',
+//
+//   url: 'https://your-docusaurus-site.example.com',
+//   baseUrl: '/',
+//
+//   organizationName: 'ChanMeng666',
+//   projectName: 'minimalist-good-post',
+//
+//   onBrokenLinks: 'throw',
+//   onBrokenMarkdownLinks: 'warn',
+//
+//   i18n: {
+//     defaultLocale: 'zh-Hans',
+//     locales: ['zh-Hans'],
+//   },
+//
+//   scripts: [
+//     {
+//       src: 'https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css',
+//     },
+//   ],
+//
+//   presets: [
+//     [
+//       'classic',
+//       /** @type {import('@docusaurus/preset-classic').Options} */
+//       ({
+//         docs: {
+//           sidebarPath: './sidebars.js',
+//           editUrl:
+//               'https://github.com/ChanMeng666/minimalist-good-post/tree/main/',
+//         },
+//         blog: {
+//           blogTitle: '极简生活博客',
+//           blogDescription: '分享极简主义生活方式和思考',
+//           postsPerPage: 5,
+//           blogSidebarCount: 0,
+//           showReadingTime: true,
+//           feedOptions: {
+//             type: ['rss', 'atom'],
+//             xslt: true,
+//           },
+//         },
+//         theme: {
+//           customCss: './src/css/custom.css',
+//         },
+//       }),
+//     ],
+//   ],
+//
+//   themeConfig:
+//   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+//       ({
+//         image: 'img/social-card.jpg',
+//         navbar: {
+//           title: '极简生活',
+//           items: [
+//             {to: '/blog', label: '文章', position: 'right'},
+//             {to: '/docs/intro', label: '指南', position: 'right'},
+//             {
+//               href: 'https://github.com/ChanMeng666/minimalist-good-post',
+//               label: 'GitHub',
+//               position: 'right',
+//             },
+//           ],
+//         },
+//         footer: {
+//           style: 'light',
+//           links: [
+//             {
+//               title: '发现',
+//               items: [
+//                 {
+//                   label: '所有文章',
+//                   to: '/blog',
+//                 },
+//                 {
+//                   label: '新手指南',
+//                   to: '/docs/intro',
+//                 },
+//               ],
+//             },
+//             {
+//               title: '社区',
+//               items: [
+//                 {
+//                   label: '豆瓣小组',
+//                   href: 'https://douban.com/group/minimalist',
+//                 },
+//                 {
+//                   label: 'GitHub',
+//                   href: 'https://github.com/ChanMeng666/minimalist-good-post',
+//                 },
+//               ],
+//             },
+//           ],
+//           copyright: `Copyright © ${new Date().getFullYear()} 极简生活`,
+//         },
+//         prism: {
+//           theme: prismThemes.github,
+//           darkTheme: prismThemes.dracula,
+//         },
+//       }),
+// };
+//
+// export default config;
+
+
+
 // docusaurus.config.js
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '极简生活',
-  tagline: '分享简单而美好的生活方式',
+  title: 'Minimalist Living',
+  tagline: 'Sharing a Simple and Beautiful Way of Life',
   favicon: 'img/favicon.ico',
 
   url: 'https://your-docusaurus-site.example.com',
@@ -169,14 +286,23 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap',
+      type: 'text/css',
+      crossorigin: 'anonymous',
+    }
+  ],
+
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   scripts: [
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css',
+      src: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap',
     },
   ],
 
@@ -191,8 +317,8 @@ const config = {
               'https://github.com/ChanMeng666/minimalist-good-post/tree/main/',
         },
         blog: {
-          blogTitle: '极简生活博客',
-          blogDescription: '分享极简主义生活方式和思考',
+          blogTitle: 'Minimalist Living Blog',
+          blogDescription: 'Sharing minimalist lifestyle and thoughts',
           postsPerPage: 5,
           blogSidebarCount: 0,
           showReadingTime: true,
@@ -213,10 +339,10 @@ const config = {
       ({
         image: 'img/social-card.jpg',
         navbar: {
-          title: '极简生活',
+          title: 'Minimalist Living',
           items: [
-            {to: '/blog', label: '文章', position: 'right'},
-            {to: '/docs/intro', label: '指南', position: 'right'},
+            {to: '/blog', label: 'Articles', position: 'right'},
+            {to: '/docs/intro', label: 'Guide', position: 'right'},
             {
               href: 'https://github.com/ChanMeng666/minimalist-good-post',
               label: 'GitHub',
@@ -228,24 +354,24 @@ const config = {
           style: 'light',
           links: [
             {
-              title: '发现',
+              title: 'Discover',
               items: [
                 {
-                  label: '所有文章',
+                  label: 'All Articles',
                   to: '/blog',
                 },
                 {
-                  label: '新手指南',
+                  label: 'Getting Started',
                   to: '/docs/intro',
                 },
               ],
             },
             {
-              title: '社区',
+              title: 'Community',
               items: [
                 {
-                  label: '豆瓣小组',
-                  href: 'https://douban.com/group/minimalist',
+                  label: 'Reddit',
+                  href: 'https://reddit.com/r/minimalism',
                 },
                 {
                   label: 'GitHub',
@@ -254,7 +380,7 @@ const config = {
               ],
             },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} 极简生活`,
+          copyright: `Copyright © ${new Date().getFullYear()} Minimalist Living`,
         },
         prism: {
           theme: prismThemes.github,

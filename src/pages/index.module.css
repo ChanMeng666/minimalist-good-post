@@ -98,7 +98,7 @@
   display: none;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .hero {
     padding: 10rem 2rem 8rem;
   }
