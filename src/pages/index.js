@@ -29,7 +29,7 @@ const MinimalistHeader = () => (
                 Discover the art of minimalist living through curated articles and guides.
                 Learn how simplifying your life can lead to more meaningful experiences.
             </p>
-            <Link to="/blog" className={styles.heroButton}>
+            <Link to="/docs/ultimate-simplicity" className={styles.heroButton}>
                 <span>Browse All Articles</span>
                 <ChevronRight />
             </Link>

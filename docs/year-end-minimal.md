@@ -112,7 +112,6 @@ The following images document my year-end decluttering process and current minim
 ![Wardrobe Items](./img/year-end-minimal/image_6.jpg)
 ![Current Closet Setup](./img/year-end-minimal/image_7.jpg)
 ![Winter Wardrobe](./img/year-end-minimal/image_8.jpg)
-![Casual Style Example](./img/year-end-minimal/image_9.jpg)
 ![Minimalist Living Space](./img/year-end-minimal/image_10.jpg)
 ![New Dining Setup](./img/year-end-minimal/image_11.jpg)
 ![Decluttered Items](./img/year-end-minimal/image_12.jpg)

@@ -16,6 +16,13 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // 添加 markdown 配置，支持 Mermaid
+  markdown: {
+    mermaid: true,
+  },
+
+  // 添加 Mermaid 主题
+  themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
     {
@@ -45,6 +52,8 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl:
               'https://github.com/ChanMeng666/minimalist-good-post/tree/main/',
+          // 启用 MDX 功能
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), {}]],
         },
         blog: {
           blogTitle: 'Minimalist Living Blog',
@@ -52,6 +61,8 @@ const config = {
           postsPerPage: 5,
           blogSidebarCount: 0,
           showReadingTime: true,
+          // 启用 MDX 功能
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), {}]],
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -67,6 +78,13 @@ const config = {
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        // 添加 Mermaid 配置
+        mermaid: {
+          theme: {light: 'neutral', dark: 'dark'},
+          options: {
+            maxTextSize: 50000,
+          },
+        },
         image: 'img/social-card.jpg',
         navbar: {
           title: 'Minimalist Living',
@@ -92,7 +110,7 @@ const config = {
                 },
                 {
                   label: 'All Articles',
-                  to: '/docs/intro',
+                  to: '/docs/ultimate-simplicity',
                 },
               ],
             },
@@ -115,6 +133,8 @@ const config = {
         prism: {
           theme: prismThemes.github,
           darkTheme: prismThemes.dracula,
+          // 添加更多语言支持
+          additionalLanguages: ['mermaid', 'python', 'bash', 'json', 'markdown'],
         },
       }),
 };
