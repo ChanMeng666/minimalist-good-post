@@ -1,17 +1,34 @@
+/* Base layout */
 .main {
   background-color: var(--ifm-background-color);
   min-height: 100vh;
 }
 
+/* Hero section */
 .hero {
   position: relative;
   padding: 8rem 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
 .heroContent {
-  max-width: 64rem;
-  margin: 0 auto;
+  flex: 1;
+  max-width: 600px;
   padding: 0 1rem;
+}
+
+.heroModelContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  position: relative;
 }
 
 .heroTitle {
@@ -51,38 +68,59 @@
   text-decoration: none;
 }
 
+/* Posts section */
 .posts {
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .postCard {
-  display: block;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
   transition: background-color 0.2s;
 }
 
 .postCard:hover {
   background-color: var(--ifm-color-emphasis-100);
-  text-decoration: none;
+}
+
+.postContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.postContainerReverse {
+  flex-direction: row-reverse;
 }
 
 .postContent {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  flex: 1;
+  max-width: 600px;
+}
+
+.postModelContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  position: relative;
 }
 
 .postTitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--ifm-color-emphasis-900);
 }
 
 .postExcerpt {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.75;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: var(--ifm-color-emphasis-700);
 }
 
@@ -92,26 +130,145 @@
   gap: 0.5rem;
   color: var(--ifm-color-emphasis-600);
   font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.readMore:hover {
+  color: var(--ifm-color-emphasis-900);
+  text-decoration: none;
 }
 
 .breakLine {
   display: none;
 }
 
-@media (min-width: 768px) {
+/* Animation classes */
+.fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet responsive styles */
+@media (min-width: 997px) and (max-width: 1200px) {
   .hero {
-    padding: 10rem 2rem 8rem;
+    padding: 6rem 2rem;
   }
 
   .heroTitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
-  .breakLine {
-    display: inline;
+  .postContainer {
+    padding: 3rem 2rem;
+  }
+
+  .postTitle {
+    font-size: 1.75rem;
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 996px) {
+  .hero {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+
+  .heroModelContainer {
+    min-height: 300px;
+  }
+
+  .postContainer,
+  .postContainerReverse {
+    flex-direction: column;
+    padding: 3rem 1rem;
   }
 
   .postContent {
-    padding: 4rem 3rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .postTitle {
+    font-size: 1.75rem;
+  }
+
+  .postExcerpt {
+    font-size: 1rem;
+  }
+
+  .postModelContainer {
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .readMore {
+    justify-content: center;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .postCard:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Print styles */
+@media print {
+  .heroModelContainer,
+  .postModelContainer {
+    display: none;
+  }
+
+  .hero,
+  .postContainer {
+    padding: 2rem 0;
+  }
+
+  .postCard {
+    break-inside: avoid;
+  }
+}
+
+/* High contrast mode */
+@media (forced-colors: active) {
+  .heroButton,
+  .readMore {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .fadeIn {
+    animation: none;
+  }
+
+  .heroButton,
+  .readMore,
+  .postCard {
+    transition: none;
   }
 }
