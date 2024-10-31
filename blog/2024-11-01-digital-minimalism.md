@@ -198,12 +198,6 @@ Digital minimalism isn't about rejecting technology—it's about using it purpos
 "The key is not to let technology control us, but to control how we use technology."
 :::
 
-## Additional Resources
-
-- [Official Docusaurus Documentation](https://docusaurus.io/docs)
-- [Digital Minimalism Community](/community)
-- [Monthly Challenges](/challenges)
-
 ---
 
 *Remember: The journey to digital minimalism is personal and iterative. What works for others might not work for you, and that's okay. The key is finding your own balanced approach to technology use.*
