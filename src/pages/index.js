@@ -21,7 +21,8 @@ const MinimalistHeader = () => (
     <div className={styles.hero}>
         <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-                Minimalist Living,<br className={styles.breakLine} />
+                Minimalist Living,
+                <br className={styles.breakLine} />
                 Beautiful Life
             </h1>
             <p className={styles.heroSubtitle}>
@@ -39,7 +40,7 @@ const MinimalistHeader = () => (
                 position="relative"
                 containerStyles={{
                     position: 'absolute',
-                    right: '0',
+                    right: '50',
                     top: '50%',
                     transform: 'translateY(-50%)'
                 }}
@@ -77,7 +78,7 @@ const Home = () => {
                                     position="relative"
                                     containerStyles={{
                                         position: 'absolute',
-                                        right: '0',
+                                        right: '50',
                                         top: '50%',
                                         transform: 'translateY(-50%)'
                                     }}
@@ -104,7 +105,7 @@ const Home = () => {
                                     position="relative"
                                     containerStyles={{
                                         position: 'absolute',
-                                        left: '0',
+                                        left: '50',
                                         top: '50%',
                                         transform: 'translateY(-50%)'
                                     }}
@@ -131,7 +132,7 @@ const Home = () => {
                                     position="relative"
                                     containerStyles={{
                                         position: 'absolute',
-                                        right: '0',
+                                        right: '50',
                                         top: '50%',
                                         transform: 'translateY(-50%)'
                                     }}
