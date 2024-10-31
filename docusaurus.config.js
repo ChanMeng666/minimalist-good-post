@@ -71,8 +71,8 @@ const config = {
         navbar: {
           title: 'Minimalist Living',
           items: [
-            {to: '/blog', label: 'Articles', position: 'right'},
-            {to: '/docs/intro', label: 'Guide', position: 'right'},
+            {to: '/blog', label: 'Guide', position: 'right'},
+            {to: '/docs/ultimate-simplicity', label: 'Articles', position: 'right'},
             {
               href: 'https://github.com/ChanMeng666/minimalist-good-post',
               label: 'GitHub',
@@ -87,11 +87,11 @@ const config = {
               title: 'Discover',
               items: [
                 {
-                  label: 'All Articles',
+                  label: 'Getting Started',
                   to: '/blog',
                 },
                 {
-                  label: 'Getting Started',
+                  label: 'All Articles',
                   to: '/docs/intro',
                 },
               ],
