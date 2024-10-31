@@ -116,20 +116,6 @@ const ModelViewer = ({
         };
     }, [modelPath, width, height]);
 
-    // return (
-    //     <div
-    //         ref={containerRef}
-    //         className={`absolute ${position} transform cursor-grab active:cursor-grabbing transition-opacity duration-300 hover:opacity-90 md:block`}
-    //         style={{
-    //             width: `${width}px`,
-    //             height: `${height}px`,
-    //             ...containerStyles
-    //         }}
-    //         title={title}
-    //     />
-    // );
-
-
     return (
         <div
             ref={containerRef}
