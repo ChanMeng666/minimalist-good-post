@@ -21,9 +21,11 @@ const MinimalistHeader = () => (
     <div className={styles.hero}>
         <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-                Minimalist Living,
-                <br className={styles.breakLine} />
-                Beautiful Life
+                {/*Minimalist Living,*/}
+                {/*<br className={styles.breakLine} />*/}
+                {/*Beautiful Life*/}
+                <span className={styles.titleLine}>Minimalist Living,</span>
+                <span className={styles.titleLine}>Beautiful Life</span>
             </h1>
             <p className={styles.heroSubtitle}>
                 Discover the art of minimalist living through curated articles and guides.

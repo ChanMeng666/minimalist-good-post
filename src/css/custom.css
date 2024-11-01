@@ -402,3 +402,40 @@ li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+
+
+/* 调整导航栏 logo 尺寸 */
+.navbar__logo {
+  height: 2.5rem; /* 增加高度，可以根据需要调整这个值，比如 3rem、3.5rem 等 */
+  width: auto; /* 保持宽度自适应，保持图片比例 */
+  transition: transform 0.3s ease;
+}
+
+.navbar__logo:hover {
+  transform: scale(1.05); /* hover 时稍微放大 */
+}
+
+
+/* 确保 logo 清晰度 */
+.navbar__logo img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* 优化 logo 在深色模式下的显示 */
+[data-theme='dark'] .navbar__logo img {
+  filter: brightness(1.1); /* 在深色模式下稍微提高亮度 */
+}
+
+/* 在较小屏幕上的尺寸 */
+@media screen and (max-width: 996px) {
+  .navbar__logo {
+    height: 2rem; /* 移动端稍微小一点 */
+  }
+}
+
+/* Logo 和标题的间距 */
+.navbar__brand {
+  gap: 1rem; /* logo 和网站标题之间的间距 */
+}

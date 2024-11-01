@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Minimalist Living',
   tagline: 'Sharing a Simple and Beautiful Way of Life',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/minimalist-good-post-black.svg',
 
   url: 'https://minimalist-good-post.vercel.app',
   baseUrl: '/',
@@ -85,9 +85,14 @@ const config = {
             maxTextSize: 50000,
           },
         },
-        image: 'img/social-card.jpg',
+        image: 'img/minimalist-good-post-black.svg',
         navbar: {
           title: 'Minimalist Living',
+          logo: {
+            alt: 'Minimalist Living Logo',
+            src: 'img/minimalist-good-post-black.svg',
+            srcDark: 'img/minimalist-good-post-white.svg',
+          },
           items: [
             {to: '/blog', label: 'Guide', position: 'right'},
             {to: '/docs/ultimate-simplicity', label: 'Articles', position: 'right'},
@@ -128,7 +133,13 @@ const config = {
               ],
             },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} Minimalist Living`,
+          // copyright: `Copyright © ${new Date().getFullYear()} Minimalist Living • Code & Crafted with 💛 by Chan Meng`,
+          copyright: `
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <div>Copyright © ${new Date().getFullYear()} Minimalist Living</div>
+              <div>Code & Crafted with 💛 by Chan Meng</div>
+            </div>
+          `,
         },
         prism: {
           theme: prismThemes.github,
