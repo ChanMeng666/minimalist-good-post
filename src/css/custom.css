@@ -1,611 +1,3 @@
-/*!***/
-/* * src/css/custom.css*/
-/* * Any CSS included here will be global. The classic template*/
-/* * bundles Infima by default. Infima is a CSS framework designed to*/
-/* * work well for content-centric websites.*/
-/* *!*/
-
-/*!* Light mode variables *!*/
-/*:root {*/
-/*  !* Primary color and its variations *!*/
-/*  --ifm-color-primary: #2c2c2c;*/
-/*  --ifm-color-primary-dark: #282828;*/
-/*  --ifm-color-primary-darker: #252525;*/
-/*  --ifm-color-primary-darkest: #1f1f1f;*/
-/*  --ifm-color-primary-light: #303030;*/
-/*  --ifm-color-primary-lighter: #333333;*/
-/*  --ifm-color-primary-lightest: #393939;*/
-
-/*  !* Background colors *!*/
-/*  --ifm-background-color: #ffffff;*/
-/*  --ifm-background-surface-color: #f5f5f5;*/
-
-/*  !* Navbar specific *!*/
-/*  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);*/
-/*  --ifm-navbar-height: 4rem;*/
-
-/*  !* Footer specific *!*/
-/*  --ifm-footer-background-color: #ffffff;*/
-
-/*  !* Typography *!*/
-/*  --ifm-font-family-base: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;*/
-/*  --ifm-heading-font-weight: 300;*/
-/*  --ifm-font-weight-semibold: 500;*/
-
-/*  !* Spacing *!*/
-/*  --ifm-spacing-horizontal: 1.5rem;*/
-
-/*  !* Code blocks *!*/
-/*  --ifm-code-font-size: 95%;*/
-/*  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);*/
-
-/*  !* Color emphasis scale *!*/
-/*  --ifm-color-emphasis-0: var(--ifm-background-color);*/
-/*  --ifm-color-emphasis-100: #f5f5f5;*/
-/*  --ifm-color-emphasis-200: #e5e5e5;*/
-/*  --ifm-color-emphasis-300: #d4d4d4;*/
-/*  --ifm-color-emphasis-400: #a3a3a3;*/
-/*  --ifm-color-emphasis-500: #737373;*/
-/*  --ifm-color-emphasis-600: #525252;*/
-/*  --ifm-color-emphasis-700: #404040;*/
-/*  --ifm-color-emphasis-800: #262626;*/
-/*  --ifm-color-emphasis-900: #171717;*/
-/*  --ifm-color-emphasis-1000: var(--ifm-background-color-inverse);*/
-/*}*/
-
-/*!* Dark mode variables *!*/
-/*[data-theme='dark'] {*/
-/*  --ifm-color-primary: #ffffff;*/
-/*  --ifm-color-primary-dark: #e6e6e6;*/
-/*  --ifm-color-primary-darker: #d9d9d9;*/
-/*  --ifm-color-primary-darkest: #b3b3b3;*/
-/*  --ifm-color-primary-light: #ffffff;*/
-/*  --ifm-color-primary-lighter: #ffffff;*/
-/*  --ifm-color-primary-lightest: #ffffff;*/
-
-/*  --ifm-background-color: #111111;*/
-/*  --ifm-background-surface-color: #1a1a1a;*/
-/*  --ifm-navbar-background-color: rgba(17, 17, 17, 0.95);*/
-/*  --ifm-footer-background-color: #111111;*/
-
-/*  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);*/
-
-/*  !* Dark mode emphasis scale *!*/
-/*  --ifm-color-emphasis-0: var(--ifm-background-color);*/
-/*  --ifm-color-emphasis-100: #1a1a1a;*/
-/*  --ifm-color-emphasis-200: #2d2d2d;*/
-/*  --ifm-color-emphasis-300: #404040;*/
-/*  --ifm-color-emphasis-400: #595959;*/
-/*  --ifm-color-emphasis-500: #737373;*/
-/*  --ifm-color-emphasis-600: #8c8c8c;*/
-/*  --ifm-color-emphasis-700: #a6a6a6;*/
-/*  --ifm-color-emphasis-800: #bfbfbf;*/
-/*  --ifm-color-emphasis-900: #d9d9d9;*/
-/*  --ifm-color-emphasis-1000: var(--ifm-background-color-inverse);*/
-/*}*/
-
-/*!* Navbar styles *!*/
-/*.navbar {*/
-/*  backdrop-filter: blur(8px);*/
-/*  border-bottom: 1px solid var(--ifm-color-emphasis-200);*/
-/*  box-shadow: none;*/
-/*  height: var(--ifm-navbar-height);*/
-/*}*/
-
-/*.navbar__brand {*/
-/*  font-weight: 300;*/
-/*  letter-spacing: -0.5px;*/
-/*}*/
-
-/*.navbar__link {*/
-/*  font-weight: 400;*/
-/*}*/
-
-/*.navbar__toggle {*/
-/*  color: var(--ifm-color-emphasis-600);*/
-/*  display: none; !* 默认隐藏汉堡菜单 *!*/
-/*}*/
-
-
-/*!* 导航栏动画 *!*/
-/*.navbar__items {*/
-/*  transition: all 0.3s ease;*/
-/*}*/
-
-/*!* 改进导航栏项目的间距 *!*/
-/*.navbar__item {*/
-/*  padding: 0.5rem 1rem;*/
-/*}*/
-
-/*!* 优化导航栏 logo 和标题 *!*/
-/*.navbar__brand {*/
-/*  margin-right: 1rem;*/
-/*  gap: 1rem; !* logo 和网站标题之间的间距 *!*/
-/*}*/
-
-/*!* Logo 样式 *!*/
-/*.navbar__logo {*/
-/*  height: 2.5rem;*/
-/*  margin-right: 0.5rem;*/
-/*}*/
-
-/*!* Footer styles *!*/
-/*.footer {*/
-/*  border-top: 1px solid var(--ifm-color-emphasis-200);*/
-/*  background-color: var(--ifm-footer-background-color);*/
-/*  color: var(--ifm-color-emphasis-600);*/
-/*  padding: 3rem 0;*/
-/*}*/
-
-/*.footer__title {*/
-/*  color: var(--ifm-color-emphasis-900);*/
-/*  font-size: 0.875rem;*/
-/*  font-weight: var(--ifm-font-weight-semibold);*/
-/*  letter-spacing: 0.05em;*/
-/*  text-transform: uppercase;*/
-/*}*/
-
-/*.footer__item {*/
-/*  font-size: 0.875rem;*/
-/*}*/
-
-/*.footer__link-item {*/
-/*  color: var(--ifm-color-emphasis-700);*/
-/*}*/
-
-/*.footer__link-item:hover {*/
-/*  color: var(--ifm-color-emphasis-900);*/
-/*  text-decoration: none;*/
-/*}*/
-
-/*.footer__copyright {*/
-/*  color: var(--ifm-color-emphasis-600);*/
-/*  font-size: 0.875rem;*/
-/*}*/
-
-/*!* Blog list styles *!*/
-/*.blog-list-page article {*/
-/*  border-bottom: 1px solid var(--ifm-color-emphasis-200);*/
-/*  padding: 2.5rem 0;*/
-/*  margin: 0;*/
-/*}*/
-
-/*.blog-list-page article h2 {*/
-/*  font-size: 1.75rem;*/
-/*  font-weight: var(--ifm-heading-font-weight);*/
-/*  letter-spacing: -0.025em;*/
-/*  margin-bottom: 1rem;*/
-/*}*/
-
-/*.blog-list-page article footer {*/
-/*  margin-top: 1.5rem;*/
-/*}*/
-
-/*!* Markdown content styles *!*/
-/*.markdown {*/
-/*  font-size: 1.1rem;*/
-/*  line-height: 1.8;*/
-/*}*/
-
-/*.markdown h1,*/
-/*.markdown h2,*/
-/*.markdown h3,*/
-/*.markdown h4,*/
-/*.markdown h5,*/
-/*.markdown h6 {*/
-/*  font-weight: var(--ifm-heading-font-weight);*/
-/*  letter-spacing: -0.025em;*/
-/*}*/
-
-/*.markdown h1 {*/
-/*  font-size: 2.5rem;*/
-/*}*/
-
-/*.markdown h2 {*/
-/*  font-size: 2rem;*/
-/*}*/
-
-/*.markdown h3 {*/
-/*  font-size: 1.5rem;*/
-/*}*/
-
-/*!* Code block styles *!*/
-/*.prism-code {*/
-/*  font-size: var(--ifm-code-font-size);*/
-/*  background-color: var(--ifm-background-surface-color);*/
-/*  border-radius: 8px;*/
-/*}*/
-
-/*!* Table styles *!*/
-/*table {*/
-/*  width: 100%;*/
-/*  margin-bottom: 1rem;*/
-/*  border-collapse: collapse;*/
-/*}*/
-
-/*table thead tr {*/
-/*  border-bottom: 2px solid var(--ifm-color-emphasis-200);*/
-/*}*/
-
-/*table th {*/
-/*  font-weight: var(--ifm-font-weight-semibold);*/
-/*}*/
-
-/*table th,*/
-/*table td {*/
-/*  padding: 0.75rem;*/
-/*  border: none;*/
-/*}*/
-
-/*table tbody tr {*/
-/*  border-bottom: 1px solid var(--ifm-color-emphasis-200);*/
-/*}*/
-
-/*!* Button styles *!*/
-/*.button {*/
-/*  font-weight: var(--ifm-font-weight-semibold);*/
-/*  transition: all 0.2s ease;*/
-/*}*/
-
-/*.button:hover {*/
-/*  transform: translateY(-1px);*/
-/*}*/
-
-/*!* Card styles *!*/
-/*.card {*/
-/*  border: 1px solid var(--ifm-color-emphasis-200);*/
-/*  border-radius: var(--ifm-card-border-radius);*/
-/*  box-shadow: none;*/
-/*  transition: all 0.2s ease;*/
-/*}*/
-
-/*.card:hover {*/
-/*  border-color: var(--ifm-color-emphasis-300);*/
-/*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
-/*}*/
-
-/*!* Hero section styles *!*/
-/*.hero {*/
-/*  padding: 4rem 2rem;*/
-/*}*/
-
-/*.hero__title {*/
-/*  font-size: 3.5rem;*/
-/*  font-weight: 300;*/
-/*  letter-spacing: -0.025em;*/
-/*  line-height: 1.2;*/
-/*  margin-bottom: 1.5rem;*/
-/*}*/
-
-/*.hero__subtitle {*/
-/*  font-size: 1.25rem;*/
-/*  line-height: 1.75;*/
-/*  color: var(--ifm-color-emphasis-700);*/
-/*  margin-bottom: 2rem;*/
-/*  max-width: 42rem;*/
-/*}*/
-
-/*!* Nav dropdown styles *!*/
-/*.dropdown__menu {*/
-/*  border: 1px solid var(--ifm-color-emphasis-200);*/
-/*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);*/
-/*}*/
-
-/*.dropdown__link {*/
-/*  font-size: 0.875rem;*/
-/*}*/
-
-/*!* Search styles *!*/
-/*.navbar__search {*/
-/*  padding: 0.5rem;*/
-/*}*/
-
-/*.navbar__search-input {*/
-/*  font-family: var(--ifm-font-family-base), sans-serif;*/
-/*  border-radius: 9999px;*/
-/*  border: 1px solid var(--ifm-color-emphasis-200);*/
-/*  padding: 0.5rem 1rem;*/
-/*}*/
-
-/*!* Selection color *!*/
-/*::selection {*/
-/*  background-color: var(--ifm-color-primary);*/
-/*  color: var(--ifm-color-emphasis-0);*/
-/*}*/
-
-/*!* Focus styles *!*/
-/*:focus-visible {*/
-/*  outline: 2px solid var(--ifm-color-primary);*/
-/*  outline-offset: 2px;*/
-/*}*/
-
-/*!* Smooth scrolling *!*/
-/*html {*/
-/*  scroll-behavior: smooth;*/
-/*}*/
-
-/*!* Mobile responsive adjustments *!*/
-/*@media screen and (max-width: 996px) {*/
-/*  :root {*/
-/*    --ifm-navbar-height: 3.5rem;*/
-/*    --ifm-spacing-horizontal: 1rem;*/
-/*  }*/
-
-/*  .navbar {*/
-/*    padding: 0.5rem 1rem;*/
-/*  }*/
-
-/*  .hero {*/
-/*    padding: 3rem 1rem;*/
-/*  }*/
-
-/*  .hero__title {*/
-/*    font-size: 2.5rem;*/
-/*  }*/
-
-/*  .hero__subtitle {*/
-/*    font-size: 1.125rem;*/
-/*  }*/
-
-/*  .blog-list-page article {*/
-/*    padding: 2rem 1rem;*/
-/*  }*/
-
-/*  .markdown {*/
-/*    font-size: 1rem;*/
-/*  }*/
-
-/*  .footer {*/
-/*    padding: 2rem 1rem;*/
-/*  }*/
-/*}*/
-
-/*!* Tablet responsive adjustments *!*/
-/*@media screen and (min-width: 997px) and (max-width: 1200px) {*/
-/*  .hero__title {*/
-/*    font-size: 3rem;*/
-/*  }*/
-/*}*/
-
-/*!* Animations *!*/
-/*@keyframes fadeIn {*/
-/*  from {*/
-/*    opacity: 0;*/
-/*    transform: translateY(20px);*/
-/*  }*/
-/*  to {*/
-/*    opacity: 1;*/
-/*    transform: translateY(0);*/
-/*  }*/
-/*}*/
-
-/*.fadeIn {*/
-/*  animation: fadeIn 0.5s ease-out forwards;*/
-/*}*/
-
-/*!* Link hover effects *!*/
-/*a:not(.navbar__link):not(.footer__link-item):hover {*/
-/*  text-decoration: none;*/
-/*  color: var(--ifm-color-primary-darker);*/
-/*}*/
-
-/*!* Content container max-width *!*/
-/*.container {*/
-/*  max-width: 1200px;*/
-/*  margin: 0 auto;*/
-/*  padding: 0 var(--ifm-spacing-horizontal);*/
-/*}*/
-
-/*!* Image styles *!*/
-/*img {*/
-/*  max-width: 100%;*/
-/*  height: auto;*/
-/*  border-radius: 8px;*/
-/*}*/
-
-/*!* Blockquote styles *!*/
-/*blockquote {*/
-/*  border-left: 3px solid var(--ifm-color-primary);*/
-/*  margin: 0;*/
-/*  padding: 1rem 0 1rem 1rem;*/
-/*  color: var(--ifm-color-emphasis-700);*/
-/*  font-style: italic;*/
-/*}*/
-
-/*!* List styles *!*/
-/*ul, ol {*/
-/*  padding-left: 1.5rem;*/
-/*}*/
-
-/*li {*/
-/*  margin: 0.5rem 0;*/
-/*}*/
-
-/*!* Transition effects *!*/
-/** {*/
-/*  transition-property: background-color, border-color, color, fill, stroke;*/
-/*  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
-/*  transition-duration: 150ms;*/
-/*}*/
-
-
-
-/*!* 调整导航栏 logo 尺寸 *!*/
-/*.navbar__logo {*/
-/*  height: 2.5rem; !* 增加高度，可以根据需要调整这个值，比如 3rem、3.5rem 等 *!*/
-/*  width: auto; !* 保持宽度自适应，保持图片比例 *!*/
-/*  transition: transform 0.3s ease;*/
-/*}*/
-
-/*.navbar__logo:hover {*/
-/*  transform: scale(1.05); !* hover 时稍微放大 *!*/
-/*}*/
-
-
-/*!* 确保 logo 清晰度 *!*/
-/*.navbar__logo img {*/
-/*  image-rendering: -webkit-optimize-contrast;*/
-/*  image-rendering: crisp-edges;*/
-/*}*/
-
-/*!* 优化 logo 在深色模式下的显示 *!*/
-/*[data-theme='dark'] .navbar__logo img {*/
-/*  filter: brightness(1.1); !* 在深色模式下稍微提高亮度 *!*/
-/*}*/
-
-/*!* 在较小屏幕上的尺寸 *!*/
-/*@media screen and (max-width: 996px) {*/
-/*  .navbar__logo {*/
-/*    height: 2rem; !* 移动端稍微小一点 *!*/
-/*  }*/
-/*}*/
-
-
-
-
-
-/*!* 移动端样式 *!*/
-/*@media (max-width: 996px) {*/
-/*  !* Logo 在移动端稍小一点 *!*/
-/*  .navbar__logo {*/
-/*    height: 2rem;*/
-/*  }*/
-
-/*  .navbar__toggle {*/
-/*    color: var(--ifm-navbar-link-color);*/
-/*    padding: 8px;*/
-/*  }*/
-
-/*  .navbar__items--right {*/
-/*    margin-left: 0;*/
-/*  }*/
-
-/*  .navbar-sidebar {*/
-/*    padding-top: var(--ifm-navbar-height);*/
-/*  }*/
-
-/*  .navbar-sidebar__backdrop {*/
-/*    background-color: rgba(0, 0, 0, 0.3);*/
-/*  }*/
-
-/*  .navbar-sidebar__items {*/
-/*    padding: 0.5rem 0;*/
-/*  }*/
-
-/*  .navbar-sidebar__item {*/
-/*    padding: 1rem;*/
-/*  }*/
-
-/*  .navbar-sidebar__brand {*/
-/*    display: none; !* 隐藏侧边栏中重复的 logo *!*/
-/*  }*/
-
-/*  !* 确保菜单打开时正常显示 *!*/
-/*  html[data-navbar-sidebar-shown] .navbar-sidebar {*/
-/*    transform: translateX(0);*/
-/*  }*/
-
-/*  !* 改进菜单项的样式 *!*/
-/*  .navbar__items {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-start;*/
-/*    width: 100%;*/
-/*  }*/
-
-/*  .navbar__link {*/
-/*    padding: 0.75rem 0;*/
-/*    width: 100%;*/
-/*  }*/
-
-/*  .navbar__item:hover {*/
-/*    background-color: var(--ifm-color-emphasis-100);*/
-/*    border-radius: 4px;*/
-/*  }*/
-
-/*  .navbar-sidebar .navbar__brand {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    padding: 1rem;*/
-/*  }*/
-
-/*  !* 改进移动端菜单项的布局 *!*/
-/*  .navbar-sidebar .navbar__items {*/
-/*    padding: 0.5rem;*/
-/*  }*/
-
-/*  .navbar-sidebar .navbar__item {*/
-/*    padding: 0.75rem 1rem;*/
-/*    margin: 0.25rem 0;*/
-/*    width: 100%;*/
-/*  }*/
-
-/*  !* 添加过渡动画 *!*/
-/*  .navbar-sidebar {*/
-/*    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*  }*/
-
-/*  !* 确保菜单项在移动端显示 *!*/
-/*  .navbar__item--mobile-show {*/
-/*    display: block !important;*/
-/*  }*/
-
-
-/*  .navbar-sidebar__items .navbar__item {*/
-/*    display: flex;*/
-/*    padding: 0.75rem 0;*/
-/*  }*/
-
-/*  .navbar-sidebar__items .navbar__link {*/
-/*    color: var(--ifm-navbar-link-color);*/
-/*    font-weight: var(--ifm-font-weight-normal);*/
-/*    width: 100%;*/
-/*  }*/
-
-/*  !* 确保链接在移动端有更好的点击区域 *!*/
-/*  .navbar-sidebar__items .menu__link {*/
-/*    padding: 0.75rem 0;*/
-/*  }*/
-/*}*/
-
-
-/*!* 优化触摸设备的交互 *!*/
-/*@media (hover: none) {*/
-/*  .navbar__item:active {*/
-/*    background-color: var(--ifm-color-emphasis-200);*/
-/*  }*/
-/*}*/
-
-
-/*!* 移动端菜单项悬停效果 *!*/
-/*@media (max-width: 996px) {*/
-/*  .navbar-sidebar__items .navbar__item:hover {*/
-/*    background-color: var(--ifm-color-emphasis-100);*/
-/*  }*/
-
-/*  .navbar-sidebar__items .navbar__link:hover {*/
-/*    color: var(--ifm-color-primary);*/
-/*  }*/
-/*}*/
-
-/*!* 深色模式适配 *!*/
-/*[data-theme='dark'] .navbar-sidebar {*/
-/*  background: var(--ifm-navbar-background-color);*/
-/*}*/
-
-/*[data-theme='dark'] .navbar-sidebar__backdrop {*/
-/*  background: rgba(0, 0, 0, 0.5);*/
-/*}*/
-
-/*!* 平板端样式优化 *!*/
-/*@media (min-width: 997px) and (max-width: 1200px) {*/
-/*  .navbar__logo {*/
-/*    height: 2.25rem;*/
-/*  }*/
-/*}*/
-
-
-
 /**
  * src/css/custom.css
  * Any CSS included here will be global. The classic template
@@ -668,6 +60,7 @@
 }
 
 /* ---------- 导航栏样式 ---------- */
+/* ---------- 导航栏样式 ---------- */
 /* 基础导航栏样式 */
 .navbar {
   backdrop-filter: blur(8px);
@@ -682,6 +75,19 @@
 
 .navbar__link {
   font-weight: 400;
+  position: relative;
+}
+
+.navbar__link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ifm-color-primary);
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
 }
 
 .navbar__toggle {
@@ -720,27 +126,114 @@
     height: 2rem;
   }
 
+  /* 汉堡菜单按钮样式 */
+  .navbar__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.4rem;
+    color: var(--ifm-navbar-link-color);
+    cursor: pointer;
+    z-index: 100001; /* 确保在侧边栏之上 */
+  }
+
+  /* 侧边栏容器 - 全屏样式 */
   .navbar-sidebar {
-    padding-top: var(--ifm-navbar-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占据整个视口宽度 */
+    height: 100vh; /* 占据整个视口高度 */
+    background: var(--ifm-background-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
   }
 
-  .navbar-sidebar__backdrop {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .navbar-sidebar__items {
+  /* 侧边栏顶部区域 */
+  .navbar-sidebar__brand {
+    display: flex;
+    align-items: center;
     padding: 1rem;
+    height: var(--ifm-navbar-height);
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
   }
 
+  /* 侧边栏展开状态 */
+  .navbar-sidebar--show {
+    transform: translateX(0);
+  }
+
+  /* 侧边栏背景遮罩 - 全屏 */
+  .navbar-sidebar__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 99999;
+  }
+
+  /* 侧边栏内容区域 */
+  .navbar-sidebar__items {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 侧边栏菜单项容器 */
+  .navbar-sidebar__items .navbar__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 侧边栏菜单项样式 */
   .navbar-sidebar__items .navbar__item {
     display: flex;
+    width: 100%;
     padding: 0.75rem 0;
+    font-size: 1.25rem;
+    color: var(--ifm-navbar-link-color);
+    transition: color 0.2s ease;
   }
 
   .navbar-sidebar__items .navbar__link {
-    color: var(--ifm-navbar-link-color);
-    font-weight: var(--ifm-font-weight-normal);
     width: 100%;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  .navbar-sidebar__items .navbar__link:hover {
+    color: var(--ifm-color-primary);
+  }
+
+  .navbar-sidebar__items .navbar__link:hover::after {
+    display: none;
+  }
+
+  /* 右侧项目在侧边栏中的样式 */
+  .navbar-sidebar__items .navbar__items--right {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  /* 主题切换按钮在侧边栏中的样式 */
+  .navbar-sidebar__items .theme-toggle {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
@@ -750,7 +243,7 @@
 }
 
 [data-theme='dark'] .navbar-sidebar__backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 [data-theme='dark'] .navbar__logo img {
@@ -761,6 +254,44 @@
 @media (min-width: 997px) and (max-width: 1200px) {
   .navbar__logo {
     height: 2.25rem;
+  }
+}
+
+/* 动画效果 */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 无障碍和性能优化 */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-sidebar,
+  .navbar__logo,
+  .navbar__link::after {
+    transition: none;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  .navbar-toggle,
+  .navbar-sidebar {
+    display: none;
+  }
+}
+
+/* 高对比度模式 */
+@media (forced-colors: active) {
+  .navbar {
+    border-bottom: 1px solid CanvasText;
+  }
+
+  .navbar__link:hover::after {
+    background-color: CanvasText;
   }
 }
 
