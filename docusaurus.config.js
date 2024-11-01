@@ -93,6 +93,7 @@ const config = {
             src: 'img/minimalist-good-post-black.svg',
             srcDark: 'img/minimalist-good-post-white.svg',
           },
+          hideOnScroll: false, // 确保导航栏不会在滚动时隐藏
           items: [
             {to: '/blog', label: 'Guide', position: 'right'},
             {to: '/docs/ultimate-simplicity', label: 'Articles', position: 'right'},
