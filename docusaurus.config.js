@@ -138,7 +138,7 @@ const config = {
           copyright: `
             <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
               <div>Copyright © ${new Date().getFullYear()} Minimalist Living</div>
-              <div>Code & Crafted with 💛 by Chan Meng</div>
+              <div>Code & Crafted with 💛 by <a href="https://github.com/ChanMeng666/minimalist-good-post">Chan Meng</a></div>
             </div>
           `,
         },
