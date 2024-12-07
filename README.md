@@ -1,19 +1,26 @@
-# minimalist-good-post
+<div align="center">
+ <h1> <img src="/static/img/minimalist-good-post-black.svg" width="80px"><br/>Minimalist Living</h1>
+ <img src="https://img.shields.io/github/stars/ChanMeng666/minimalist-good-post?style=social"/>
+ <img src="https://img.shields.io/github/forks/ChanMeng666/minimalist-good-post?style=social"/>
+ <img src="https://img.shields.io/github/issues/ChanMeng666/minimalist-good-post?style=social"/>
+ <img src="https://img.shields.io/website?style=social&url=https%3A%2F%2Fminimalist-good-post.vercel.app"/>
+ <img src="https://img.shields.io/github/license/ChanMeng666/minimalist-good-post?style=social"/>
+</div>
 
-> Sharing a Simple and Beautiful Way of Life
+<br/>
 
-A modern blog platform dedicated to minimalist living, built with Docusaurus and enhanced with interactive 3D visualizations.
+A modern blog platform dedicated to minimalist living, built with Docusaurus and enhanced with interactive 3D visualizations. Sharing the art of simple, intentional living through curated articles and guides.
 
 ## Features
 
-- 📚 Rich Content Library: Comprehensive guides on minimalist living, digital wellness, and space organization
-- 🎨 Clean, Minimalist Design: Thoughtfully crafted UI with Space Grotesk typography
-- 🌓 Dark/Light Mode: Seamless theme switching for comfortable reading
-- 🖼️ Interactive 3D Models: Engaging Three.js-powered visualizations
-- 📱 Fully Responsive: Optimized for all device sizes
-- 🔍 Full-Text Search: Easy navigation through content
-- 📈 Mermaid Diagrams: Visual representation of concepts
-- 🌐 MDX Support: Enhanced markdown capabilities
+- 📚 **Rich Content Library**: Comprehensive guides on minimalist living, digital wellness, and space organization
+- 🎨 **Clean, Minimalist Design**: Thoughtfully crafted UI with Space Grotesk typography
+- 🌓 **Dark/Light Mode**: Seamless theme switching for comfortable reading
+- 🖼️ **Interactive 3D Models**: Engaging Three.js-powered visualizations
+- 📱 **Fully Responsive**: Optimized for all device sizes
+- 🔍 **Full-Text Search**: Easy navigation through content
+- 📈 **Mermaid Diagrams**: Visual representation of concepts
+- 🌐 **MDX Support**: Enhanced markdown capabilities
 
 ## Tech Stack
 
@@ -74,11 +81,11 @@ minimalist-good-post/
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
