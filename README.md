@@ -11,6 +11,10 @@
 
 A modern blog platform dedicated to minimalist living, built with Docusaurus and enhanced with interactive 3D visualizations. Sharing the art of simple, intentional living through curated articles and guides.
 
+![屏幕截图_2-11-2024_11445_minimalist-good-post vercel app](https://github.com/user-attachments/assets/b28457c1-f27c-4ffa-9829-37707f744fa1)
+
+![屏幕截图 2024-12-06 110232](https://github.com/user-attachments/assets/04cad0fd-7007-4937-9dfe-088ce46d8dab)
+
 ## Features
 
 - 📚 **Rich Content Library**: Comprehensive guides on minimalist living, digital wellness, and space organization
@@ -85,7 +89,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+See the [Apache-2.0 license](LICENSE) file for details.
 
 ## Author
 
