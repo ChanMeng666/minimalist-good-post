@@ -11,6 +11,10 @@
 
 A modern blog platform dedicated to minimalist living, built with Docusaurus and enhanced with interactive 3D visualizations. Sharing the art of simple, intentional living through curated articles and guides.
 
+
+https://github.com/user-attachments/assets/804024d8-a380-4de7-875a-9ef2eca167b1
+
+
 ![屏幕截图_2-11-2024_11445_minimalist-good-post vercel app](https://github.com/user-attachments/assets/b28457c1-f27c-4ffa-9829-37707f744fa1)
 
 ![屏幕截图 2024-12-06 110232](https://github.com/user-attachments/assets/04cad0fd-7007-4937-9dfe-088ce46d8dab)
