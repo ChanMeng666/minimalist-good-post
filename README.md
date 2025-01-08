@@ -11,6 +11,11 @@
 
 A modern blog platform dedicated to minimalist living, built with Docusaurus and enhanced with interactive 3D visualizations. Sharing the art of simple, intentional living through curated articles and guides.
 
+<br/>
+
+[![Explore GitHub Profile README Generator](https://gradient-svg-generator.vercel.app/?text=👉+Try+It+Now!+👈&height=40&template=pride-rainbow)](https://minimalist-good-post.vercel.app/)
+
+<br/>
 
 https://github.com/user-attachments/assets/804024d8-a380-4de7-875a-9ef2eca167b1
 
