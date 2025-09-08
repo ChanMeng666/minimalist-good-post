@@ -133,12 +133,49 @@ const config = {
                 },
               ],
             },
+            {
+              title: 'Developer',
+              items: [
+                {
+                  label: 'Portfolio & Works',
+                  href: 'https://github.com/ChanMeng666',
+                },
+                {
+                  label: 'This Project',
+                  href: 'https://github.com/ChanMeng666/minimalist-good-post',
+                },
+                {
+                  label: 'Contact for Custom Sites',
+                  href: 'mailto:chanmeng.dev@gmail.com',
+                },
+              ],
+            },
           ],
-          // copyright: `Copyright © ${new Date().getFullYear()} Minimalist Living • Code & Crafted with 💛 by Chan Meng`,
           copyright: `
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
-              <div>Copyright © ${new Date().getFullYear()} Minimalist Living</div>
-              <div>Code & Crafted with 💛 by <a href="https://github.com/ChanMeng666/minimalist-good-post">Chan Meng</a></div>
+            <div class="footer-brand-section">
+              <div class="footer-project-brand">
+                <img src="/img/minimalist-good-post-black.svg" alt="Minimalist Living Logo" class="footer-project-logo" />
+                <div class="footer-project-info">
+                  <div class="footer-project-name">Minimalist Living</div>
+                  <div class="footer-project-tagline">Sharing a Simple and Beautiful Way of Life</div>
+                </div>
+              </div>
+              
+              <div class="footer-developer-credit">
+                <img src="/img/chan_monkey_logo_black.svg" alt="Chan Meng" class="footer-developer-avatar" />
+                <div class="footer-developer-info">
+                  <span class="footer-developer-name">Built by Chan Meng</span>
+                  <div class="footer-developer-links">
+                    <a href="mailto:chanmeng.dev@gmail.com">Contact</a> • 
+                    <a href="https://github.com/ChanMeng666">Portfolio</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="footer-copyright">
+                Copyright © ${new Date().getFullYear()} Minimalist Living • 
+                <a href="https://github.com/ChanMeng666/minimalist-good-post">View Source</a>
+              </div>
             </div>
           `,
         },
