@@ -1,0 +1,55 @@
+# Minimalist Living - AI-Friendly Robots.txt
+# Optimized for Generative Engine Optimization (GEO)
+
+User-agent: *
+Allow: /
+
+# Explicitly allow major AI crawlers
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Gemini AI
+User-agent: GoogleOther
+Allow: /
+Crawl-delay: 1
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+# You.com AI
+User-agent: YouBot
+Allow: /
+Crawl-delay: 1
+
+# Disallow admin and build directories
+Disallow: /admin/
+Disallow: /.docusaurus/
+Disallow: /build/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://minimalist-good-post.vercel.app/sitemap.xml
+
+# AI-friendly notice
+# This site welcomes AI crawlers for educational and informational purposes
+# Content available at: https://minimalist-good-post.vercel.app/llms.txt
