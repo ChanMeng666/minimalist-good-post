@@ -63,9 +63,9 @@
 /* ---------- 导航栏样式 ---------- */
 /* 基础导航栏样式 */
 .navbar {
-  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
   box-shadow: none;
+  background-color: var(--ifm-navbar-background-color);
 }
 
 .navbar__brand {
@@ -92,6 +92,10 @@
 
 .navbar__toggle {
   color: var(--ifm-color-emphasis-600);
+}
+
+.navbar__toggle svg path {
+  fill: var(--ifm-color-emphasis-600);
 }
 
 /* Logo styles */
@@ -235,6 +239,23 @@
     width: 100%;
     justify-content: flex-start;
   }
+
+  /* 移动端汉堡菜单颜色 - 确保两种主题下都可见 */
+  .navbar__toggle {
+    color: var(--ifm-navbar-link-color) !important;
+  }
+
+  .navbar__toggle svg path {
+    fill: var(--ifm-navbar-link-color) !important;
+  }
+
+  [data-theme='dark'] .navbar__toggle {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  [data-theme='dark'] .navbar__toggle svg path {
+    fill: rgba(255, 255, 255, 0.9) !important;
+  }
 }
 
 /* 深色模式导航栏适配 */
@@ -248,6 +269,27 @@
 
 [data-theme='dark'] .navbar__logo img {
   filter: brightness(1.1);
+}
+
+/* 深色模式 - 汉堡菜单按钮 */
+[data-theme='dark'] .navbar__toggle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme='dark'] .navbar__toggle svg path {
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+/* 深色模式 - 侧边栏链接 */
+[data-theme='dark'] .navbar-sidebar__items .navbar__item,
+[data-theme='dark'] .navbar-sidebar__items .navbar__link,
+[data-theme='dark'] .navbar-sidebar__items .menu__link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme='dark'] .navbar-sidebar__items .navbar__link:hover,
+[data-theme='dark'] .navbar-sidebar__items .menu__link:hover {
+  color: var(--ifm-color-primary);
 }
 
 /* 平板端导航栏样式 */
