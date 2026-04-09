@@ -7,7 +7,7 @@ const config = {
   tagline: 'Sharing a Simple and Beautiful Way of Life',
   favicon: 'img/minimalist-good-post-black.svg',
 
-  url: 'https://minimalist-good-post.vercel.app',
+  url: 'https://minimalist-good-post.pages.dev',
   baseUrl: '/',
 
   organizationName: 'ChanMeng666',

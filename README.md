@@ -19,7 +19,7 @@ One-click **FREE** deployment of your minimalist lifestyle blog.
 <!-- SHIELD GROUP -->
 
 [![][github-release-shield]][github-release-link]
-[![][vercel-shield]][vercel-link]
+[![][cloudflare-shield]][cloudflare-link]
 [![][github-stars-shield]][github-stars-link]
 [![][github-forks-shield]][github-forks-link]
 [![][github-issues-shield]][github-issues-link]
@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/804024d8-a380-4de7-875a-9ef2eca167b1
  <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white"/>
  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
  <img src="https://img.shields.io/badge/MDX-%23000000.svg?style=for-the-badge&logo=mdx&logoColor=white"/>
- <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/>
+ <img src="https://img.shields.io/badge/cloudflare%20pages-%23F38020.svg?style=for-the-badge&logo=cloudflarepages&logoColor=white"/>
 
 </div>
 
@@ -105,7 +105,7 @@ https://github.com/user-attachments/assets/804024d8-a380-4de7-875a-9ef2eca167b1
     - [Quick Installation](#quick-installation)
     - [Development Mode](#development-mode)
   - [🛳 Deployment](#-deployment)
-    - [`A` Vercel Deployment](#a-vercel-deployment)
+    - [`A` Cloudflare Pages Deployment](#a-cloudflare-pages-deployment)
     - [`B` Docker Deployment](#b-docker-deployment)
   - [📖 Usage Guide](#-usage-guide)
     - [Content Management](#content-management)
@@ -236,8 +236,8 @@ Beyond the core features, this platform includes:
         <br>Mermaid
       </td>
       <td align="center" width="96">
-        <img src="https://cdn.simpleicons.org/vercel" width="48" height="48" alt="Vercel" />
-        <br>Vercel
+        <img src="https://cdn.simpleicons.org/cloudflarepages" width="48" height="48" alt="Cloudflare Pages" />
+        <br>Cloudflare Pages
       </td>
     </tr>
   </table>
@@ -259,7 +259,7 @@ Beyond the core features, this platform includes:
 
 **Development & Deployment:**
 - **Build Tool**: Docusaurus CLI with hot reloading
-- **Deployment**: Vercel with automatic builds
+- **Deployment**: Cloudflare Pages with global CDN
 - **Performance**: Optimized bundles and lazy loading
 - **SEO**: Automatic sitemap and meta tag generation
 
@@ -291,7 +291,7 @@ graph TB
     subgraph "Build & Deploy"
         J[Docusaurus Build]
         K[Static Site Generation]
-        L[Vercel Deployment]
+        L[Cloudflare Pages Deployment]
     end
     
     A --> F
@@ -425,21 +425,48 @@ npm run clear
 
 ## 🛳 Deployment
 
-### `A` Vercel Deployment
+### `A` Cloudflare Pages Deployment
 
-**One-Click Deploy:**
+**Why Cloudflare Pages:**
+- Global CDN with 300+ edge locations
+- Zero cold starts for static sites
+- Free SSL and unlimited bandwidth
+- Built-in DDoS protection
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChanMeng666%2Fminimalist-good-post)
+```mermaid
+graph LR
+    A[Local Build] -->|npm run build| B[./build directory]
+    B -->|wrangler pages deploy| C[Cloudflare Pages CDN]
+    C --> D[minimalist-good-post.pages.dev]
+    
+    style A fill:#f9f9f9,stroke:#333
+    style C fill:#F38020,stroke:#333,color:#fff
+    style D fill:#4CAF50,stroke:#333,color:#fff
+```
 
 **Manual Deployment:**
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Install Wrangler CLI
+npm i -g wrangler
 
-# Deploy
-vercel --prod
+# Login to Cloudflare
+wrangler login
+
+# Build the site
+npm run build
+
+# Deploy to Cloudflare Pages
+wrangler pages deploy ./build --project-name minimalist-good-post
 ```
+
+**Git Integration (Recommended):**
+
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) > Pages
+2. Connect your GitHub repository
+3. Set build command: `npm run build`
+4. Set build output directory: `build`
+5. Every push to `main` will auto-deploy
 
 ### `B` Docker Deployment
 
@@ -692,9 +719,9 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENS
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 
 <!-- Project Links -->
-[live-site]: https://minimalist-good-post.vercel.app
-[docs]: https://minimalist-good-post.vercel.app/docs/ultimate-simplicity
-[blog]: https://minimalist-good-post.vercel.app/blog
+[live-site]: https://minimalist-good-post.pages.dev
+[docs]: https://minimalist-good-post.pages.dev/docs/ultimate-simplicity
+[blog]: https://minimalist-good-post.pages.dev/blog
 
 <!-- GitHub Links -->
 [github-issues-link]: https://github.com/ChanMeng666/minimalist-good-post/issues
@@ -707,8 +734,8 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENS
 
 <!-- Shield Badges -->
 [github-release-shield]: https://img.shields.io/github/v/release/ChanMeng666/minimalist-good-post?color=369eff&labelColor=black&logo=github&style=flat-square
-[vercel-shield]: https://img.shields.io/badge/vercel-online-55b467?labelColor=black&logo=vercel&style=flat-square
-[vercel-link]: https://minimalist-good-post.vercel.app
+[cloudflare-shield]: https://img.shields.io/badge/cloudflare%20pages-online-F38020?labelColor=black&logo=cloudflarepages&style=flat-square
+[cloudflare-link]: https://minimalist-good-post.pages.dev
 [github-contributors-shield]: https://img.shields.io/github/contributors/ChanMeng666/minimalist-good-post?color=c4f042&labelColor=black&style=flat-square
 [github-forks-shield]: https://img.shields.io/github/forks/ChanMeng666/minimalist-good-post?color=8ae8ff&labelColor=black&style=flat-square
 [github-stars-shield]: https://img.shields.io/github/stars/ChanMeng666/minimalist-good-post?color=ffcb47&labelColor=black&style=flat-square
@@ -717,7 +744,7 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENS
 [pr-welcome-shield]: https://img.shields.io/badge/🤝_PRs_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 
 <!-- Badge Variants -->
-[demo-shield-badge]: https://img.shields.io/badge/TRY%20DEMO-ONLINE-55b467?labelColor=black&logo=vercel&style=for-the-badge
+[demo-shield-badge]: https://img.shields.io/badge/TRY%20DEMO-ONLINE-F38020?labelColor=black&logo=cloudflarepages&style=for-the-badge
 
 <!-- Social Share Links -->
 [share-x-link]: https://x.com/intent/tweet?hashtags=minimalism,opensource&text=Check%20out%20this%20amazing%20minimalist%20living%20platform&url=https%3A%2F%2Fgithub.com%2FChanMeng666%2Fminimalist-good-post
